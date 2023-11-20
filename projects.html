@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//icofont/icofont.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.js "></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+        /* background-color: #001759; */
+        background-color: black;
+        }
+        main{
+            display: flex;
+            flex-wrap:wrap ;
+            width: 1000px;
+            margin: auto;
+            height: 800px;
+        }
+        main div{
+            max-width: 250px;
+            height: 300px;
+            margin: 30px;
+            border-radius: 5px;
+            color:#fff;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            /* background-color: #021444; */
+            box-shadow: 0 0 4px 0px #fff;
+        }
+        main div:hover{
+            background-color: rgb(65, 65, 228);
+            transition: 0.5s ease-in-out;
+            transform: scale(1.1);
+        }
+
+        .nav{
+            width: 100%;
+            padding: 0 10px;
+            /* position: sticky; */
+            align-items: center;
+            top: 0;}
+        
+            img{
+                width: 100px;
+                margin-bottom: 10px;
+            }
+            i{
+                font-size: xx-large;
+            }
+            li{
+                display: inline-block;
+                margin: 0 20px;
+                font-weight: bold;
+                border: 1px solid white;
+                padding: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+            }
+            li:hover{
+                border: none;
+                color: #fff;
+                transition: 0.2s ease;
+                
+            }
+    #side{
+    width: 300px;
+    height: 500px;
+    color: #fff;
+    background-color: #021444;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding: 20px 10px ;
+    display: none;}
+    .resume{
+        width: 120px;
+        border: 2px solid black;
+        text-align: center;
+    }
+        a{
+        text-decoration: none;
+        }
+    
+
+
+#navb:focus-within #side{
+    display: block;
+    transition: 5s ease;
+    transition-timing-function: linear;
+    transition-duration: 3s;
+}
+i{
+    color: #fff;
+}
+.none{
+    border: none;
+    background: transparent;
+}    
+.Education{
+    color: #fff;
+    width: 400px;
+    margin:50px auto;
+    padding: 0 20px;
+}
+aside{
+    margin: 30px 0;
+
+}
+.a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.resume{
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+}
+    </style>
+</head>
+<body>
+    <nav onscroll="follow()" class=" pt-3 pb-3 d-flex justify-content-between nav">
+
+        <!-- <div  id="navb"><button class="none"><i class="icofont-navigation-menu"></i></button>
+        <img src="./smallLogo.png" alt="">
+            
+            <div class="sidenav" id="side">
+            <img src="./smallLogo.png" alt="">
+                <p><i class="icofont-error"></i></p>
+                <p>About</p>
+                <p>Project</p>
+                <p>Work</p>
+                <p>Contact</p>
+                <div class="resume"><a href="./resume.html">Resume</a></div>
+            </div>
+
+        </div> -->
+
+        <ul>
+            <li>About</li>
+            <li>My Work</li>
+            <li> More Info</li>
+            <li>Education</li>
+        </ul>
+
+    </nav>
+    <main class="col ">
+        <div>
+            <h3>RocketGainfx</h3>
+            <p>A crypto investment platform, where you can invest your funds and
+             and get a percentage interest for a particular period of time
+            </p>
+            <a class="bg-white py-2 px-2 rounded-2 fw-bold"
+            href="https://rocketgainfx.netlify.app">Check it out..</a>
+        </div>
+
+        <div>
+            <h3>Helpssa</h3>
+            <p>A simple well detailed grants website for elderly ones
+            </p>
+            <a class="bg-white py-2 px-2 rounded-2 fw-bold"
+            href="https://helpssa-com.netlify.app">Check it out..</a>
+        </div>
+
+        <div>
+            <h3>YouTube</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Dev.to</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Spring</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Netflix</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>WhatsApp web</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Fiverr</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Fiverr</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Fiverr</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Fiverr</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+
+        <div>
+            <h3>Fiverr</h3>
+            <p>I created an almost complete Fiverr website amd responsiveness
+                with HTML naand CSS
+            </p>
+        </div>
+      
+        
+
+    </main>
+</body>
+</html>
