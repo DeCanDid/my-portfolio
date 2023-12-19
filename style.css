@@ -102,8 +102,25 @@ html{
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+.home-content, .img_handler{
+    width: 45%;
+}
 .home .max-width{
-    margin: auto 0 auto 40px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto ;
+    padding: 20px 0;
+}
+.img_handler{
+    text-align: end;
+}
+
+.home .max-width img{
+    width: 80%;
+    border-radius: 3% 10% 3% 10%;
+
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -627,8 +644,12 @@ body::-webkit-scrollbar-thumb{
     .max-width{
         padding: 0 50px;
     }
+  
 }
 @media (max-width: 947px) {
+    #home{
+        display: block;
+    }
     .max-width{
         padding: 0 50px;
     }
