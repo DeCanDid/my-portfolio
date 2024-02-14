@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col1{
+    padding: 30px 0;
+}
+
+.col1 p{
+    font-weight: bold;
+    font-size: larger;
+}
+
+section{
+    background-color: rgb(17, 17, 17);
+    color: #fff;
+}
+
+section .col1{
+    text-align: center;
+}
+
+section .projects_col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 95%;
+        
+}
+section .project_detail{
+    text-align: center;
+    width: 30%;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #201f1f;
+}
+
+section .project-ankaraFiesta{
+    background-image:url(./project_image/ankara.PNG);
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    
+}
+section .project-eCommerce{
+    background-image: url(./project_image/e-commerce.PNG);
+    background-size: contain;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+}
+
+section .project-grant{
+    background-image: url(./project_image/grant.PNG);
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+}
+
+section .project-ajike{
+    background-image: url(./project_image/ajike.PNG);
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+}
+
+section .project-dinner{
+    background-image: url(./project_image/dinner.PNG);
+    border-radius: 10px 10px 0 0;
+    background-size: contain;
+    height: 200px;
+}
+
+section .project-toDo{
+    background-image: url(./project_image/toDo.PNG);
+    border-radius: 10px 10px 0 0;
+    background-size:contain;
+    height: 200px;
+}
+
+section .project-musicApp{
+    background-image: url(./project_image/musicApp.PNG);
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    height: 200px;
+}
+
+section .project-real-estate{
+    background-image: url(./project_image/real-estate.PNG);
+    border-radius: 10px 10px 0 0;
+    background-position: cover;
+    height: 200px;
+}
+
+section .project-rocketFx{
+    background-image: url(./project_image/rocket.PNG);
+    border-radius: 10px 10px 0 0;
+    background-position: cover;
+    height: 200px;
+}
+
+
+section .project-ramBoufe{
+    background-image: url(./project_image/ramBoufe.PNG);
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    height: 200px;
+}
+
+section a{
+    padding: 3px;
+    background-color: rgb(17, 151, 196);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4%;
+}
+section a:hover{
+    color: #fff;
+}
+section .p-2{
+    padding: 5px 0;
+}
+section .project_detail:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease-out;
+
+}
+
+/* media querry */
+@media (max-width:1240px) {
+    section .project_detail{
+        width: 45%;
+    }
+}
+
+@media (max-width:900px) {
+    section .project_detail{
+        width: 90%;
+    }
+}

@@ -5,6 +5,56 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.displayResponse{
+    background-color: rgb(9, 92, 9);
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+
+}
+
+/* Preloader Styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* You can customize the background color */
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+
+}
+
+.spinner {
+    margin:auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide preloader when content is loaded */
+.loaded .preloader {
+    opacity: 0;
+    pointer-events: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -407,7 +457,7 @@ body::-webkit-scrollbar-thumb{
 }
 .contact .title::after{
     content: "get in touch";
-    width: 120px;
+    width: 150px;
 }
 
 .contact .contact-content .column{
@@ -443,6 +493,10 @@ body::-webkit-scrollbar-thumb{
 .contact .contact-content .row .info .sub-title{
     color: #333 ;
 }
+.column-left{
+    font-size: 25px;
+}
+
 .contact .right form .fields{
     display: flex;
 }
@@ -631,7 +685,7 @@ body::-webkit-scrollbar-thumb{
 
 @media (max-width: 1300px) {
     .home .max-width{
-        margin-left: 0px;
+        /* margin-left: 0px; */
     }
 }
 @media (max-width: 1104px) {
@@ -643,6 +697,18 @@ body::-webkit-scrollbar-thumb{
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
+    }
+    .img_handler{
+        display:none;
+    }
+    .home-content{
+        /* padding:0 ; */
+        margin: 50px auto;
+        /* background-color: red; */
+        width: 90%;
+    }
+    #home{
+        height: fit-content;
     }
   
 }
